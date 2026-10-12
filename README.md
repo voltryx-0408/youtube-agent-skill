@@ -1,7 +1,6 @@
 # The YouTube agent skill
 
-Eleven Claude skills that run a YouTube channel. Free, MIT, no signup, no API key, nothing to
-connect.
+Eleven Claude skills for YouTube workflow, customized for the multi-game Hinglish gaming channel @leikum_gaming. Free, MIT, no signup, no API key required.
 
 One of them writes your script off 21 hook formulas and scores the hook before you waste a take on
 it. One lints the title and the thumbnail as a single pairing, because writing them separately is
@@ -18,7 +17,7 @@ channel, not by how big the channel is.
 Paste this into Claude:
 
 ```
-https://github.com/Jakeschincariol/youtube-agent-skill
+https://github.com/voltryx-0408/youtube-agent-skill
 
 Install this skill, then confirm /yt-script works.
 ```
@@ -26,14 +25,14 @@ Install this skill, then confirm /yt-script works.
 Or do it yourself, in Claude Code:
 
 ```bash
-git clone https://github.com/Jakeschincariol/youtube-agent-skill.git
+git clone https://github.com/voltryx-0408/youtube-agent-skill.git
 cp -r youtube-agent-skill/skills/yt-* ~/.claude/skills/
 ```
 
 Or as a plugin:
 
 ```
-/plugin marketplace add Jakeschincariol/youtube-agent-skill
+/plugin marketplace add voltryx-0408/youtube-agent-skill
 /plugin install youtube-agent
 ```
 
@@ -42,10 +41,7 @@ Code at all? Paste any single `SKILL.md` at the top of a chat and it runs as a m
 Python tools, which is most of the point of `/yt-script`, `/yt-retention` and `/yt-edit`, but the
 rest works.
 
-Then spend ten minutes on [`templates/voice.md`](templates/voice.md). Copy it to
-`~/.claude/youtube/voice.md` and fill it in, or send Claude three of your own videos and say "write
-my voice.md from these". Every skill reads that file. It matters more here than anywhere else,
-because you have to say the words out loud.
+The `templates/voice.md` profile is preconfigured for @leikum_gaming: multi-game gaming, natural Hinglish, Shorts hooks, funny gameplay, and honest claims. Copy it to `~/.claude/youtube/voice.md` so every skill can read it. Refine it with transcripts from three of your own videos when available. See [`SETUP_LEIKUM_GAMING.md`](SETUP_LEIKUM_GAMING.md) for the setup checklist.
 
 ## The eleven
 
